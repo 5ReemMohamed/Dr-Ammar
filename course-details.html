@@ -38,48 +38,177 @@
     <header class="about-header">
         <nav class="navbar navbar-expand-lg sticky-top">
             <div class="container">
-                <a class="navbar-brand d-flex align-items-center g-1" href="index.html"
-                    aria-label="The UK Board For Learning and Training logo">
+                <a class="navbar-brand d-flex align-items-center g-1" href="index.html">
                     <span>Ammar Gadia</span>
-
                 </a>
-
-                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-label="Toggle navigation" aria-expanded="false">
-                    <i class="fas fa-bars" aria-hidden="true"></i>
+                <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <i class="fas fa-bars"></i>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav mx-auto d-flex gap-3 align-items-center">
-                        <li class="nav-item"><a class="nav-link active" href="index.html"
-                                aria-label="The UK Board For Learning and Training home">Home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="courses.html"
-                                aria-label="The UK Board For Learning and Training about">Courses</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#about"
-                                aria-label="The UK Board For Learning and Training services">About Us</a>
-                        </li>
-                        <li class="nav-item"><a class="nav-link" href="contact.html"
-                                aria-label="The UK Board For Learning and Training agencies">Contact Us</a></li>
-                        <li class="nav-item"><a class="nav-link" href="login.html"
-                                aria-label="The UK Board For Learning and Training certificates">User Account</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="courses.html">Courses</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="login.html">User Account</a></li>
                     </ul>
                     <div class="d-flex justify-content-center justify-content-lg-start mt-4 mt-lg-0">
-                        <a href="login.html" class=" btn btn-primary"><i
-                                class="fa-solid fa-right-to-bracket me-2"></i>Login</a>
+                        <a href="login.html" class="btn btn-primary">
+                            <i class="fa-solid fa-right-to-bracket me-2"></i>Login
+                        </a>
                     </div>
                 </div>
             </div>
         </nav>
+
         <div class="container">
             <div class="row g-4">
-                <div class="col-lg-8">
-                    <div class="content">
-                        <h1>Gadia Step 1 -Full Course</h1>
-                        
+                <div class="col-lg-6">
+                    <div class="p-5 ">
+                        <div class="review">
+                            <div class="d-flex align-items-center justify-content-between flex-wrap mb-3">
+                                <div class="rating">
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <i class="fa-solid fa-star text-warning"></i>
+                                    <span class="ms-2">0 reviews</span>
+                                </div>
+                                <span class="badge bg-success px-3 py-2">NEW COURSE</span>
+                            </div>
+                        </div>
+                        <h2 class="details-title">Gadia Step-1 Free Trial</h2>
+                        <div class="boxes d-flex gap-5 align-items-center">
+                            <div class="cell d-flex gap-3 align-items-center">
+                                <div class="img">
+                                    <img src="images/footer.jpg" class="w-100" alt="person">
+                                </div>
+                                <div class="content d-flex flex-column gap-1">
+                                    <span>Instructor</span>
+                                    <a href="">Ammar</a>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="icon">
+                                </div>
+                                <div class="content d-flex flex-column gap-1">
+                                    <span>Category</span>
+                                    <a href="">Gadia</a>
+                                </div>
+                            </div>
+                            <div class="cell">
+                                <div class="icon">
+                                </div>
+                                <div class="content">
+                                    <span>Students enrolled</span>
+                                    <h3>11,063</h3>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
+    <section>
+        <div class="container my-5 ">
+            <!-- Tabs -->
+            <div class="row g-4">
+                <div class="col-lg-7">
+                    <div class="left p-4 border rounded-3 shadow-sm">
+                        <ul class="nav nav-tabs mb-3" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="desc-tab" data-bs-toggle="tab"
+                                    data-bs-target="#desc" type="button" role="tab">Description</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="curr-tab" data-bs-toggle="tab" data-bs-target="#curr"
+                                    type="button" role="tab">Curriculum</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="rev-tab" data-bs-toggle="tab" data-bs-target="#rev"
+                                    type="button" role="tab">Reviews</button>
+                            </li>
+                        </ul>
+
+                        <!-- Tab Content -->
+                        <div class="tab-content" id="myTabContent">
+                            <div class="tab-pane fade show active" id="desc" role="tabpanel">
+                                <h3 class="plan-title">1-Essential Plan</h3>
+                                <div class="video-container">
+                                    <video controls
+                                        poster="https://via.placeholder.com/400x700/000000/FFFFFF?text=Essential+Plan+Video">
+                                        <source src="your-video.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="curr" role="tabpanel">
+                                <h5 class="curriculum-title">Endocrine (10 Lectures)</h5>
+
+                                <div class="lecture-list">
+                                    <div class="lecture-item">
+                                        <div class="lecture-info">
+                                            <span class="lecture-number">1</span>
+                                            <span class="lecture-icon"><i class="bi bi-play-fill"></i></span>
+                                            <span class="lecture-title">Lecture 1 (Pituitary part 1)</span>
+                                        </div>
+                                        <span class="lecture-time">2h 9min</span>
+                                    </div>
+
+                                    <div class="lecture-item">
+                                        <div class="lecture-info">
+                                            <span class="lecture-number">2</span>
+                                            <span class="lecture-icon"><i class="bi bi-question-circle"></i></span>
+                                            <span class="lecture-title">Lecture 1 Quiz</span>
+                                        </div>
+                                        <span class="lecture-time">8 questions</span>
+                                    </div>
+
+                                    <div class="lecture-item">
+                                        <div class="lecture-info">
+                                            <span class="lecture-number">3</span>
+                                            <span class="lecture-icon"><i class="bi bi-play-fill"></i></span>
+                                            <span class="lecture-title">Lecture 2–a (Pituitary part 2)</span>
+                                        </div>
+                                        <span class="lecture-time">1h 14min</span>
+                                    </div>
+
+                                    <div class="lecture-item">
+                                        <div class="lecture-info">
+                                            <span class="lecture-number">4</span>
+                                            <span class="lecture-icon"><i class="bi bi-play-fill"></i></span>
+                                            <span class="lecture-title">Lecture 2–b (Adrenal gland, Congenital adrenal
+                                                hyperplasia)</span>
+                                        </div>
+                                        <span class="lecture-time">1h 43min</span>
+                                    </div>
+
+                                    <div class="lecture-item">
+                                        <div class="lecture-info">
+                                            <span class="lecture-number">5</span>
+                                            <span class="lecture-icon"><i class="bi bi-question-circle"></i></span>
+                                            <span class="lecture-title">Lecture 2 Quiz</span>
+                                        </div>
+                                        <span class="lecture-time">6 questions</span>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="rev" role="tabpanel">
+                                    <p class="mt-3">Reviews section content...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5">
+                        <div class="right">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+    </section>
     <footer class="pb-2">
         <div class="container">
             <div class="row g-4 pb-4">
@@ -135,7 +264,7 @@
             </div>
             <p class="text-center d-flex justify-content-center align-items-center pt-4">Allright Reserved - Dr Ammar
                 Gadia
-</p>
+            </p>
         </div>
     </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
