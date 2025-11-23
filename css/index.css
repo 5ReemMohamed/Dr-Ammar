@@ -2085,6 +2085,13 @@ textarea {
     .lecture-title {
       font-weight: 500;
       color: #333;
+      font-size: 13px;
+    }
+    @media screen and (min-width:500px) {
+         .lecture-title {
+   
+      font-size: 16px;
+    }
     }
 
     .lecture-time {
