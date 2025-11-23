@@ -12,6 +12,16 @@ document.addEventListener("DOMContentLoaded", () => {
       }
     });
   });
+ document.querySelectorAll(".video-container").forEach(container => {
+    const thumbnail = container.querySelector(".video-thumbnail");
+    const video = container.querySelector(".hidden-video");
+
+    thumbnail.addEventListener("click", () => {
+        thumbnail.style.display = "none";
+        video.style.display = "block";
+        video.play();
+    });
+});
 
   var swiper = new Swiper(".testimonials-swiper", {
     slidesPerView: 3,
@@ -40,16 +50,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
- 
+
   const swiperEl = document.querySelector('.testimonials-swiper');
   if (swiperEl) {
     swiperEl.addEventListener('mouseenter', () => swiper.autoplay.stop());
     swiperEl.addEventListener('mouseleave', () => swiper.autoplay.start());
   }
 
-  
+
   const counters = document.querySelectorAll('.counter');
-  const speed = 100; 
+  const speed = 100;
 
   const animateCounters = () => {
     counters.forEach(counter => {
@@ -118,23 +128,23 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-const gridBtn = document.getElementById('gridViewBtn');
-const listBtn = document.getElementById('listViewBtn');
-const container = document.getElementById('coursesContainer');
+  const gridBtn = document.getElementById('gridViewBtn');
+  const listBtn = document.getElementById('listViewBtn');
+  const container = document.getElementById('coursesContainer');
 
-if (gridBtn && listBtn && container) {
-  gridBtn.addEventListener('click', () => {
-    container.classList.remove('list-view');
-    gridBtn.classList.add('active');
-    listBtn.classList.remove('active');
-  });
+  if (gridBtn && listBtn && container) {
+    gridBtn.addEventListener('click', () => {
+      container.classList.remove('list-view');
+      gridBtn.classList.add('active');
+      listBtn.classList.remove('active');
+    });
 
-  listBtn.addEventListener('click', () => {
-    container.classList.add('list-view');
-    listBtn.classList.add('active');
-    gridBtn.classList.remove('active');
-  });
-}
+    listBtn.addEventListener('click', () => {
+      container.classList.add('list-view');
+      listBtn.classList.add('active');
+      gridBtn.classList.remove('active');
+    });
+  }
 
 
 });
